@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-App-Seguimiento De TTo Medico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="conteiner0">
+        <div class="conteiner1">
+            <label for="input1">Nombre De Medicamento:</label>
+            <input type="text" id="input1" name="input1">
+
+            <label for="input2">Dosis/Dia(mg):</label>
+            <input type="text" id="input2" name="input2">
+
+            <label for="input3">Tomas por Dia:</label>
+            <input type="text" id="input3" name="input3">
+
+            <label for="input4">Dosis/Horas(mg):</label>
+            <input type="text" id="input4" name="input4">
+
+            <label for="input5">Duracion de TTO:</label>
+            <input type="text" id="input5" name="input5">
+
+            <label for="input6">Fecha De Inicio:</label>
+            <input type="date" id="input6" name="input6">
+
+            <label for="input7">Fecha De Finalizacion:</label>
+            <input type="date" id="input7" name="input7">
+
+            <div class="boton">
+                <button onclick="enviarContenido()">Enviar Datos</button>
+            </div>
+        </div>
+
+        <div class="conteiner2">
+            <textarea cols="40" rows="12" id="qr-data"></textarea>
+
+            <div class="boton">
+                <button onclick="generateQR()">Generar QR</button>
+            </div>
+
+            <div id="qrcode"></div>
+        </div>
+
+    </div>
+    
+    <script src="./qrcode.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
